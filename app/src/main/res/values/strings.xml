@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">VirtualChatMate</string>
+    <string name="Enter_the_message">Введите сообщение</string>
 </resources>

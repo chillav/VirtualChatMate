@@ -26,12 +26,13 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.unit.dp
 import com.ks.virtualchatmate.R
-import com.ks.virtualchatmate.ui.theme.ArrowBackColor
-import com.ks.virtualchatmate.ui.theme.BottomIconColor
+import com.ks.virtualchatmate.ui.theme.BlueColor
+import com.ks.virtualchatmate.ui.theme.PurpleColor
 
 @Composable
 fun Toolbar() {
@@ -42,7 +43,7 @@ fun Toolbar() {
             .background(Color.White)
     ) {
         Icon(
-            tint = ArrowBackColor,
+            tint = PurpleColor,
             painter = painterResource(id = R.drawable.arrow_back),
             contentDescription = null,
             modifier = Modifier
@@ -90,11 +91,11 @@ fun ChatInputField(modifier: Modifier = Modifier) {
                 .wrapContentHeight()
                 .clip(CircleShape),
             singleLine = false,
-            placeholder = { Text(text = "Ввидите сообщение") },
+            placeholder = { Text(stringResource(id = R.string.Enter_the_message)) },
             trailingIcon = {
                 Icon(
                     imageVector = Icons.Outlined.Send,
-                    tint = BottomIconColor,
+                    tint = BlueColor,
                     modifier = Modifier,
                     contentDescription = null
                 )
