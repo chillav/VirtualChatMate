@@ -14,6 +14,7 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.wrapContentHeight
 import androidx.compose.foundation.lazy.LazyColumn
+import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.foundation.shape.RoundedCornerShape
 import androidx.compose.material.icons.Icons
@@ -88,7 +89,6 @@ fun ChatInputField(
     onTextChanged: (String) -> Unit,
     onSendClicked: () -> Unit,
 ) {
-
     Row(
         modifier = modifier,
         horizontalArrangement = Arrangement.Center,
@@ -126,11 +126,12 @@ fun ChatInputField(
 fun ChatScreen(viewModel: ChatViewModel) {
 
     val state = viewModel.inputState.collectAsState()
+    val chatContentState = viewModel.messagesState.collectAsState()
 
     Scaffold(
         modifier = Modifier.fillMaxSize(),
         topBar = {
-            Toolbar(modifier = Modifier)
+            Toolbar()
         }, bottomBar = {
             ChatInputField(
                 modifier = Modifier
@@ -147,25 +148,29 @@ fun ChatScreen(viewModel: ChatViewModel) {
                 .padding(contentPadding)
                 .fillMaxSize()
         ) {
-            ChatContent()
+            ChatContent(
+                messages = chatContentState.value.reversed()
+            )
         }
     }
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
-fun ChatContent() {
+fun ChatContent(
+    messages: List<ChatMessage>,
+) {
     LazyColumn(
         modifier = Modifier
             .fillMaxSize(),
         reverseLayout = true,
     ) {
-        items(chatMessages) { message ->
+        items(messages) { message ->
             Row(
                 modifier = Modifier
                     .padding(horizontal = 16.dp, vertical = 4.dp),
             ) {
-                if (message.senderId == currentUser) {
+                if (message.senderId == Sender.USER) {
                     Spacer(modifier = Modifier.weight(1f))
                     TextField(
                         value = message.content,
