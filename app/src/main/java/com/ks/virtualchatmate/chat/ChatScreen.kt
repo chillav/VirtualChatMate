@@ -170,7 +170,7 @@ fun ChatContent(
                 modifier = Modifier
                     .padding(horizontal = 16.dp, vertical = 4.dp),
             ) {
-                if (message.senderId == Sender.USER) {
+                if (message.role == Role.USER) {
                     Spacer(modifier = Modifier.weight(1f))
                     TextField(
                         value = message.content,

@@ -1,10 +1,11 @@
 package com.ks.virtualchatmate.chat
 
 data class ChatMessage(
-    val senderId: Sender,
+    val role: Role,
     val content: String,
 )
 
-enum class Sender  {
-    USER, AI,
+enum class Role(val value: String)  {
+    USER("user"),
+    AI("assistant"),
 }
