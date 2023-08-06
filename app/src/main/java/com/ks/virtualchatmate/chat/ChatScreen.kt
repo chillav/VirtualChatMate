@@ -97,7 +97,7 @@ fun ChatInputField(
             value = text,
             maxLines = 3,
             onValueChange = { onTextChanged(it) },
-            colors = TextFieldDefaults.textFieldColors(
+            colors = TextFieldDefaults.colors(
                 focusedIndicatorColor = Color.Transparent,
                 unfocusedIndicatorColor = Color.Transparent,
             ),
@@ -121,7 +121,6 @@ fun ChatInputField(
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ChatScreen(viewModel: ChatViewModel) {
 
@@ -175,11 +174,11 @@ fun ChatContent(
                     TextField(
                         value = message.content,
                         onValueChange = {},
-                        colors = TextFieldDefaults.textFieldColors(
-                            containerColor = MsgSendColor,
+                        colors = TextFieldDefaults.colors(
+//                            containerColor = MsgSendColor,
                             focusedIndicatorColor = Color.Transparent,
                             unfocusedIndicatorColor = Color.Transparent,
-                            textColor = Color.White,
+//                            textColor = Color.White,
                         ),
                         readOnly = true,
                         modifier = Modifier
@@ -197,8 +196,8 @@ fun ChatContent(
                     TextField(
                         value = message.content,
                         onValueChange = {},
-                        colors = TextFieldDefaults.textFieldColors(
-                            containerColor = MsgResponseColor,
+                        colors = TextFieldDefaults.colors(
+//                            containerColor = MsgResponseColor,
                             focusedIndicatorColor = Color.Transparent,
                             unfocusedIndicatorColor = Color.Transparent,
                         ),
