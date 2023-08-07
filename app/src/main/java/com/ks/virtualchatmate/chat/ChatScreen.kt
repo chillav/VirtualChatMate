@@ -175,10 +175,10 @@ fun ChatContent(
                         value = message.content,
                         onValueChange = {},
                         colors = TextFieldDefaults.colors(
-//                            containerColor = MsgSendColor,
+                            unfocusedContainerColor = MsgSendColor,
                             focusedIndicatorColor = Color.Transparent,
                             unfocusedIndicatorColor = Color.Transparent,
-//                            textColor = Color.White,
+                            unfocusedTextColor = Color.White,
                         ),
                         readOnly = true,
                         modifier = Modifier
@@ -197,7 +197,7 @@ fun ChatContent(
                         value = message.content,
                         onValueChange = {},
                         colors = TextFieldDefaults.colors(
-//                            containerColor = MsgResponseColor,
+                            unfocusedContainerColor = MsgResponseColor,
                             focusedIndicatorColor = Color.Transparent,
                             unfocusedIndicatorColor = Color.Transparent,
                         ),
