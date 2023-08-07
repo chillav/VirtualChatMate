@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "431355506580",
+    "project_id": "virtualchatmate",
+    "storage_bucket": "virtualchatmate.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:431355506580:android:ed83add71e2917c43d6981",
+        "android_client_info": {
+          "package_name": "com.ks.virtualchatmate"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "431355506580-4hs37606lokc9psbr405al904revr7oq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ks.virtualchatmate",
+            "certificate_hash": "0e54f3d999caec659e0ca6fbd2b5fd4abb21fcf2"
+          }
+        },
+        {
+          "client_id": "431355506580-hmro87jbhb85c0qgngl3l9ftuun0rdc8.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBr_aMcf0b1RS50at-TtaNBcD3eqSFEqhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "431355506580-7fvkfe74scjoepn5gnq8ujembpacgi4k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
