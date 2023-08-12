@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">VirtualChatMate</string>
     <string name="Enter_the_message">Введите сообщение</string>
-    <string name="continue_with_google"> Продолжить через Google</string>
+    <string name="continue_with_google"> Continue With Google</string>
+    <string name="default_error_message">Something went wrong</string>
 </resources>

@@ -4,8 +4,8 @@ import androidx.compose.runtime.Composable
 import androidx.navigation.NavHostController
 import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
+import com.ks.virtualchatmate.authorization.AuthorizationScreen
 import com.ks.virtualchatmate.chat.ChatScreen
-import com.ks.virtualchatmate.sampleScreen.RegistrationScreen
 import org.koin.androidx.compose.koinViewModel
 
 @Composable
@@ -14,12 +14,12 @@ fun SetupNavigationGraph(
 ) {
     NavHost(
         navController = navController,
-        startDestination = Screen.Registration.route
+        startDestination = Screen.Authorization.route
     ) {
         composable(
-            route = Screen.Registration.route
+            route = Screen.Authorization.route
         ) {
-            RegistrationScreen(navController)
+            AuthorizationScreen(navController)
         }
         composable(
             route = Screen.Chat.route
