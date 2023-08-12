@@ -18,7 +18,7 @@ class MainActivity : ComponentActivity() {
 
         setContent {
             VirtualChatMateTheme {
-                AuthorizationScreen()
+                SetupNavigationGraph(navController = rememberNavController())
             }
         }
     }
