@@ -15,6 +15,10 @@ import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
 import androidx.compose.foundation.shape.CircleShape
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Create
+import androidx.compose.material3.FabPosition
+import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
 import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
@@ -119,7 +123,13 @@ fun DialoguesScreen(viewModel: HomeViewModel) {
         modifier = Modifier.fillMaxSize(),
         topBar = {
             DialogToolbar()
-        }
+        },
+        floatingActionButton = {
+            FloatingActionButton(onClick = { /*TODO*/ }) {
+                Icon(Icons.Filled.Create, contentDescription = "Список контактов")
+            }
+        },
+        floatingActionButtonPosition = FabPosition.End
     ) { contentPadding ->
         Column(
             modifier = Modifier
