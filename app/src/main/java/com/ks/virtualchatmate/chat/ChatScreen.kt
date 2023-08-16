@@ -81,7 +81,6 @@ fun Toolbar(modifier: Modifier = Modifier) {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ChatInputField(
     modifier: Modifier = Modifier,
@@ -154,7 +153,6 @@ fun ChatScreen(viewModel: ChatViewModel) {
     }
 }
 
-@OptIn(ExperimentalMaterial3Api::class)
 @Composable
 fun ChatContent(
     messages: List<ChatMessage>,
