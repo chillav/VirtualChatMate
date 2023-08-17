@@ -106,7 +106,7 @@ fun ChatInputField(
                 .wrapContentHeight()
                 .clip(CircleShape),
             singleLine = false,
-            placeholder = { Text(stringResource(id = R.string.Enter_the_message)) },
+            placeholder = { Text(stringResource(id = R.string.enter_the_message)) },
             trailingIcon = {
                 Icon(
                     modifier = Modifier
