@@ -4,8 +4,6 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.navigation.compose.rememberNavController
-import com.ks.virtualchatmate.home.DialoguesScreen
-import com.ks.virtualchatmate.home.HomeViewModel
 import com.ks.virtualchatmate.navigation.SetupNavigationGraph
 import com.ks.virtualchatmate.ui.theme.VirtualChatMateTheme
 
