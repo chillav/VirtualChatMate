@@ -30,6 +30,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
@@ -39,6 +40,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import coil.compose.rememberAsyncImagePainter
 import com.ks.virtualchatmate.R
+import com.ks.virtualchatmate.ui.theme.BackgroundColor
 
 @Composable
 fun DialogToolbar(modifier: Modifier = Modifier) {
@@ -46,7 +48,7 @@ fun DialogToolbar(modifier: Modifier = Modifier) {
         modifier = modifier
             .fillMaxWidth()
             .height(62.dp)
-            .background(Color(0xFFf0f8ff)),
+            .background(BackgroundColor),
         verticalAlignment = Alignment.CenterVertically,
         horizontalArrangement = Arrangement.SpaceBetween
     ) {
@@ -135,8 +137,8 @@ fun DialoguesScreen(viewModel: HomeViewModel) {
             DialogToolbar()
         },
         floatingActionButton = {
-            FloatingActionButton(onClick = { /*TODO*/ }) {
-                Icon(Icons.Filled.Create, contentDescription = "Список контактов")
+            FloatingActionButton(onClick = { /*Должен открываться список всех юзеров*/ }) {
+                Icon(Icons.Filled.Create, contentDescription = stringResource(id = R.string.list_of_users))
             }
         },
         floatingActionButtonPosition = FabPosition.End
