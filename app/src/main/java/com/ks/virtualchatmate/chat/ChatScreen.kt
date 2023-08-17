@@ -123,7 +123,6 @@ fun ChatInputField(
 
 @Composable
 fun ChatScreen(viewModel: ChatViewModel) {
-
     val state = viewModel.inputState.collectAsState()
     val chatContentState = viewModel.messagesState.collectAsState()
 
