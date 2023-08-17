@@ -13,10 +13,11 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
 import androidx.compose.foundation.lazy.LazyColumn
-import androidx.compose.foundation.lazy.items
+import androidx.compose.foundation.lazy.itemsIndexed
 import androidx.compose.foundation.shape.CircleShape
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.filled.Create
+import androidx.compose.material3.Divider
 import androidx.compose.material3.FabPosition
 import androidx.compose.material3.FloatingActionButton
 import androidx.compose.material3.Icon
@@ -77,7 +78,16 @@ fun Chats(
         modifier = Modifier
             .fillMaxSize()
     ) {
-        items(dialogues) { dialog ->
+        itemsIndexed(dialogues) { index, dialog ->
+            if (index > 0) {
+                Divider(
+                    color = Color.LightGray,
+                    thickness = 1.dp,
+                    modifier = Modifier
+                        .padding(start = 90.dp)
+                        .fillMaxWidth()
+                )
+            }
             Row(
                 modifier = Modifier
                     .background(color = Color.White)

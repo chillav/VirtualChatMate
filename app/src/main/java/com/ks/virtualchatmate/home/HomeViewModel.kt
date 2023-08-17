@@ -24,7 +24,67 @@ class HomeViewModel : ViewModel() {
                 "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
                 name = "Vika",
                 lastMessage = "Созвон сегодня будет?",
-            )
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
+            Dialogues(
+                imageUrl =
+                "https://anime-fans.ru/wp-content/uploads/2021/04/Krasivye-anime-kartinki-na-avu-dlya-devushek_13.jpg",
+                name = "Vika",
+                lastMessage = "Созвон сегодня будет?",
+            ),
         )
     }
 }
